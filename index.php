@@ -1,5 +1,9 @@
 <?php
-
+include_once __DIR__ . '/models/accessories.php';
+include_once __DIR__ . '/models/categories.php';
+include_once __DIR__ . '/models/products.php';
+include_once __DIR__ . '/models/petFood.php';
+include_once __DIR__ . '/models/toys.php';
 ?>
 
 <!DOCTYPE html>
