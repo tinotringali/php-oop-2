@@ -13,8 +13,15 @@
     $mouse = new Toys('img/topo.jpg', 'Topini di Peluche', 4.99, 'Gatto', 'Morbido con codina in corda', 8);
     $voliera = new Accessories('img/voliera.webp', 'Voliera', 184.99, 'Uccello', 'legno', 153);
     
-    $Product = [];
-    array_push($Product, $fishfood, $almoNature, $kong, $voliera, $mouse, $almoHolistic);
+    $Product = [
+        $fishfood,
+        $almoNature,
+        $kong,
+        $voliera,
+        $mouse,
+        $almoHolistic
+    ];
+
 
 ?>
 
@@ -26,6 +33,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Boolshop</title>
 </head>
 <body>
