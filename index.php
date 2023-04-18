@@ -8,11 +8,13 @@
 
     $fishfood = new Food('img/fishFood.jpg', 'Mangime per pesci', 2.95, 'Pesce', 30, 'Pesci e sotto prodotti dei pesci, Cerelai, Alghe');
     $almoNature = new Food('img/petfood_2.jpg', 'Royal Canin Mini Adult ', 43.99, 'Cane', 545, 'Prosciutto e riso');
-    $almoHolistic = new Food('img/petfood.jpg', 'Almo Nature Holistc ', 44.99, 'Cane', 600, 'Manzo e Cereali');
+    $almoHolistic = new Food('img/petfood.jpeg', 'Almo Nature Holistc ', 44.99, 'Cane', 600, 'Manzo e Cereali');
     $kong = new Toys('img/kong.jpg', 'Kong classic', 13.49, 'Cane', 'Rimabalza e Galleggia', 10);
     $mouse = new Toys('img/topo.jpg', 'Topini di Peluche', 4.99, 'Gatto', 'Morbido con codina in corda', 8);
     $voliera = new Accessories('img/voliera.webp', 'Voliera', 184.99, 'Uccello', 'legno', 153);
     
+    $Product = [];
+    array_push($Product, $fishfood, $almoNature, $kong, $voliera, $mouse, $almoHolistic);
 
 ?>
 
@@ -27,6 +29,20 @@
     <title>Boolshop</title>
 </head>
 <body>
-    <h1>Boolshop</h1>
+    <h1 class="text-center">Boolshop</h1>
+    <div>
+        <div class="d-flex justify-content-center flex-wrap gap-3 p-3">
+            <?php foreach ($Product as $articles) : ?>
+                <div class="card">
+                    <div>
+                        <img style="width: 300px;" src="<?php echo $articles->img ?>">
+                    </div>
+                    <?php foreach ($articles as $key => $articles) : ?>
+                        <p class="p-1"><?php echo $articles ?></p>
+                    <?php endforeach; ?>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 </body>
 </html>
