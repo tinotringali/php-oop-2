@@ -14,6 +14,7 @@
     $voliera = new Accessories('img/voliera.webp', 'Voliera', 184.99, 'Uccello', 'legno', 153);
     
     $Product = [
+
         $fishfood,
         $almoNature,
         $kong,
